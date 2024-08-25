@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Popins:100,200,300,400,500,600,700,800,900');
+
 :root {
   --color-primary:#7380ec;
   --color-danger:#ff7782;
@@ -136,10 +138,10 @@ b {
 
 aside {
     height: 100vh;
-    background: gray;
 }
 
 aside .top {
+    /* background: var(--color-white); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,6 +164,7 @@ aside .close {
 
 /*                      sidebar                       */
 aside .sidebar {
+    /* background: var(--color-white); */
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -190,8 +193,8 @@ aside .sidebar a span {
 }
 
 aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
+    /* position: absolute; */
+    bottom: -25rem;
     width: 100%;
 }
 
@@ -201,7 +204,7 @@ aside .sidebar a.active {
     margin-left: 0;
 }
 
-aside .sidebar a.active::before {
+aside .sidebar a.active:before {
     content: "";
     width: 6px;
     height: 100%;
@@ -537,6 +540,7 @@ main .recent-orders a {
 }
 
 /*                      MEDIA QUERIES for pad                       */
+/*
 @media screen and (max-width: 1200px) {
     .container{
         width: 94%;
@@ -578,8 +582,9 @@ main .recent-orders a {
         display: none;
     }
 }
-
+*/
 /*                      MEDIA QUERIES for mobile                       */
+/*
 @media screen and (max-width: 768px) {
     .container{
         width: 100%;
@@ -689,4 +694,4 @@ main .recent-orders a {
         font-size: 2rem;
     }
 }
-
+*/
